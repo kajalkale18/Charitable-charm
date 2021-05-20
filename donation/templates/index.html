@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donation</title>
+    {% load static %}
+    <link rel="stylesheet"  href="{%static 'style.css' %}">
+      <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!--bootstrap-->
+
+  <!--internal CSS-->
+  {% load static %}
+  <link rel="stylesheet"  href="{%static 'about.css' %}">
+
+
+
+  <!--font awesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+<body>
+<section>
+    <div class="banner">
+    <nav class="navbar">
+        <div>
+         <img src="{%static 'donation_logo.jpeg' %}" class="logo">
+        <h1 class="headtext">CharitAble</h1>
+        {% load static %}
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#contact">Contact </a></li>
+            
+
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>GIVE A BIT. CHANGE A LOT</h2>
+        
+        <P>What does it take to change someone’s whole life, you’d be surprised, Not A Lot.
+            <br>
+            <br>
+            Help us make a donation today, and help build someone’s 
+            <br>
+            <br>
+            future tomorrow!</P>
+<div>
+    <button type="button"><a class="a" href="/donateNow/">DONATE TODAY!</a></button>
+    
+</div>
+    </div>
+     </div>
+</section>
+
+
+    <section class="" id="about">
+  <div class="coloum">
+    <div class="col3">
+    <h5 class="h">We are proudly non-profit, non-corporate and non-compromised. Thousands of people like you help us stand up for an open web for all. We rely on donations to carry out our mission to keep the web open and free. WILL YOU GIVE TODAY?</h5>
+    </div>
+  {% load static %}
+    <img class="bag1" src="{%static 'about.jpeg' %}" alt="">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title"> Education.</h3>
+          <p>We work to ensure children are educated for life through collective efforts.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class=" icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title"> Nutrition</h3>
+          <p>We work to address the causes of malnutrition with special focus on children below 5 years</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x"></i>
+          <h3 class="feature-title"> Livelihood.</h3>
+          <p>Our livelihood interventions enable families to enhance income and provide better for their children.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+    <!-- Footer -->
+<section id="contact" style="background: rgba(40, 0,0, .5);">
+    <div class="jojo">
+    <div class="container-fluid w-100 " >
+    <div class="contact m-auto" style="width:500px;">
+    <form action="" method="post">{% csrf_token %}
+
+        <div class="form-group">
+            <label for="user_name" class="d-flex justify-content-start">Name</label>
+            <input type="text" name="name" class="form-control" id="user_name" placeholder="Enter name">
+          </div>
+        <div class="form-group" class="d-flex justify-content-start">
+          <label for="email" class="d-flex justify-content-start">Email address</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email ">
+        </div>
+        <div class="form-group">
+            <label for="text" class="d-flex justify-content-start">Text </label>
+            <textarea class="form-control" name="text" id="text" rows="5" placeholder="write here"></textarea>
+          </div>
+
+          <div class="form-group w-100">
+            <input type="submit" id="submit" class="btn btn-success m-auto">
+          </div>
+      </form>
+    </div>
+</div>
+
+      <i class="fab fa-facebook-f social-logo"></i>
+      <i class="fab fa-twitter social-logo"></i>
+      <i class="fab fa-instagram social-logo"></i>
+      <i class="fas fa-envelope social-logo"></i>
+      <p>© Copyright 2021 CharitAble</p>
+    </div>
+</section>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+

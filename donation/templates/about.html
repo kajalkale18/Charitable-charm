@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+
+  <!--internal CSS-->
+  {% load static %}
+  <link rel="stylesheet"  href="{%static 'about.css' %}">
+
+
+
+  <!--font awesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+
+<body>
+<section>
+  <div class="coloum">
+    <div class="col3">
+    <h5 class="h">We are proudly non-profit, non-corporate and non-compromised. Thousands of people like you help us stand up for an open web for all. We rely on donations to carry out our mission to keep the web open and free. WILL YOU GIVE TODAY?</h5>
+    </div>
+  {% load static %}
+    <img class="bag1" src="{%static 'about.jpeg' %}" alt="">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title"> Education.</h3>
+          <p>We work to ensure children are educated for life through collective efforts.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class=" icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title"> Nutrition</h3>
+          <p>We work to address the causes of malnutrition with special focus on children below 5 years</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x"></i>
+          <h3 class="feature-title"> Livelihood.</h3>
+          <p>Our livelihood interventions enable families to enhance income and provide better for their children.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+    <!-- Footer -->
+<section>
+  <div class="jojo">
+      <i class="fab fa-facebook-f social-logo"></i>
+      <i class="fab fa-twitter social-logo"></i>
+      <i class="fab fa-instagram social-logo"></i>
+      <i class="fas fa-envelope social-logo"></i>
+      <p>© Copyright 2020 Uplift India</p>
+  </div>
+</section>
+
+</body>
+
+</html>
